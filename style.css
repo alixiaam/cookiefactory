@@ -1,0 +1,159 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f7e6eb;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#25586e;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 20px;
+    background-color: #ffabde;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#e06db2;
+    text-align: center;
+}
+header a{
+    color:#e06db2;
+}
+header a:hover{
+    color: #25586e;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 130px);
+    background-image: url(img/Cookieback.jpg);
+    background-size: cover ;
+    color: #f6e1e8;
+}
+.hero h1{
+    font-size: 60px;
+}
+.hero p{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #25586e;
+    text-align: center;
+}
+
+nav {
+    background: #ffabde;
+    height: 60px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a{
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    transition: .2s ease-in-out all;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background: #a8e5f7;
+}
+
+nav .indicator{
+    width: 0px;
+    height: 7px;
+    background: #e0c1c1;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+}
+.seccion{
+    min-height: 100vh;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .card{
+    background: #c3e6ed;
+    height: 90%;
+    width: 700px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.seccion h3{
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.seccion p{
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.sec{
+    text-align: center;
+}
+.seccion img{
+ height: 300px;
+ width: 300px;
+ object-fit: cover;
+}
+
+/* Basic Footer Styling */
+footer {
+    background-color: #f7e6eb;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: #25586e;
+}
+
+
+@media screen and (max-width: 800px){
+    nav a{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav a{
+        font-size: 12px;
+    }
+}
+
